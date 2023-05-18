@@ -1,0 +1,12 @@
+<%- include('partials/header') %>
+
+<p>Do you really want to delete this Book-instance?</p>
+        
+<form method='POST' action=''>
+    <div class='form-group'>
+      <input id='bookinstanceid' class='form-control' type='hidden' name='bookinstanceid' required='true' value='<%= bookinstance.id %>'>
+    </div>
+    <button class='btn btn-primary' type='submit'>Delete</button>
+  </form>
+
+<%- include('partials/footer') %>

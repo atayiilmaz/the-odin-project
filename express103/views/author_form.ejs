@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+
+    <h1><%= title %></h1>
+
+    <form action="" method="post">
+        <div class="form-group">
+
+            <label for="first_name">First Name: </label>
+            <input type="text" class="form-control" placeholder='First name' name='first_name' required='true' value="<%= (typeof author === 'undefined' ) ?  '' : author.first_name %>"><br>
+            <label for="family_name">Family Name: </label>
+            <input type="text" class="form-control" placeholder='Family name' name='family_name' required='true' value="<%= (typeof author === 'undefined' ) ?  '' : author.family_name %>"><br>
+            <div class="form-group">
+                <label for="date_of_birth">Date of birth: </label>
+                <input type="date" class="form-control" name='date_of_birth' value="<%= (typeof author === 'undefined' ) ? '' : author.date_of_birth %>"><br>
+                <label for="date_of_birth">Date of death: </label>
+                <input type="date" class="form-control" name='date_of_death' value="<%= (typeof author === 'undefined' ) ? '' : author.date_of_death %>"><br>
+                <button class="btn btn-primary" type="submit">Submit</button>
+            
+            </div>
+        </div>
+    </form>
+
+<%- include('partials/footer') %>
