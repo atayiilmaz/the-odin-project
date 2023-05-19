@@ -1,8 +1,6 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+.main-container{
 
-a {
-  color: #00B7FF;
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
 }

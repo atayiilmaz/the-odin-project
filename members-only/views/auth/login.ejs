@@ -1,0 +1,26 @@
+<%- include('../partials/header') %>
+
+<div class="main-container">
+
+    <h1 class="mb-3"><%= title %></h1>
+
+    <form action="/login/password" method="post">
+
+    <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-control" id="username" name="username" placeholder="">
+    </div>
+    <div class="mb-3">
+        <label for="current-password" class="form-label">Password</label>
+        <input type="password" id="current-password" name="password" class="form-control" aria-labelledby="">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Login</button>
+
+</form>
+
+</div>
+
+
+
+<%- include('../partials/footer') %>
